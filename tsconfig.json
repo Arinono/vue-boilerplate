@@ -12,14 +12,14 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "resolveJsonModule": true,
     "types": [
       "webpack-env",
       "jest"
     ],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": [ "src/*" ],
+      "@store-*": ["src/store/modules/*"]
     },
     "lib": [
       "esnext",
@@ -29,6 +29,7 @@
     ]
   },
   "include": [
+    "src/*.ts",
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
